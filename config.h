@@ -225,6 +225,7 @@ static key keys[] = {
     {  MOD ,              XK_p,                      start, SHCMD("screenshot full")},
     {  MOD |CONTROL,      XK_p,                      start, SHCMD("screenshot area")},
     {  MOD |SHIFT,        XK_p,                      start, SHCMD("screenshot wind")},
+    {  0 |SHIFT|CONTROL,  XK_m,                      start, SHCMD("toggle_mic")     },
     // Exit or restart 2bwm
     {  MOD |SHIFT,        XK_Escape,           twobwm_exit, {.i=0}},
     {  MOD |CONTROL,      XK_r,             twobwm_restart, {.i=0}},
@@ -250,5 +251,4 @@ static Button buttons[] = {
   //{  MOD|SHIFT,  XCB_BUTTON_INDEX_1,     changeworkspace, {.i=0}, false},
   //{  MOD|SHIFT,  XCB_BUTTON_INDEX_3,     changeworkspace, {.i=1}, false},
     {  MOD|SHIFT,    XCB_BUTTON_INDEX_1,     changescreen,    {.i=1}, false},
-    {  MOD|SHIFT,    XCB_BUTTON_INDEX_3,     changescreen,    {.i=0}, false}
-};
+    {  MOD|SHIFT,    XCB_BUTTON_INDEX_3,     changescreen,    {.i=0}, false} };
